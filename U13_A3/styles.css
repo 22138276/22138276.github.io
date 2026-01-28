@@ -29,6 +29,7 @@ nav a:hover{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: black;
 }
 
 /* Hide the images by default */
@@ -50,6 +51,13 @@ nav a:hover{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
@@ -128,7 +136,10 @@ P{
     text-align: center;
 }
 iframe{
-    align-items: right;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
 }
 
 .Vodafone-logo {
@@ -137,12 +148,14 @@ iframe{
     display: block;
     margin: 20px auto;
 }
+
 .EE-logo {
     width: 150px;
     height: auto;
     display: block;
     margin: 20px auto;
 }
+
 .Three-logo {
     width: 150px;
     height: auto;
@@ -183,3 +196,50 @@ iframe{
     flex-wrap: wrap;
     justify-content: left;
 }
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+th {
+    background-color: #f2f2f2;
+}
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Verdana', sans-serif;
+}
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+input[type="submit"]:hover {
+    background-color: #555;
+}   
